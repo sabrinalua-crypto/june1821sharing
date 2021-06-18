@@ -1,10 +1,10 @@
 # The beauty of Makefiles #
 
-## What is it##
 
-Machine-readable documentation that makes workflow reproducible (especially locally!)
+## How it Works ##
 
-By going through a well-written Makefile, developers onboarding is able to trace the commands/flow in each step of the application.
+An automation build tool that determines what to build based on a directed acyclic graph (DAG) of targets and prerequisites.
+
 
 ## Example ##
 Take for example a project with the following directory structure,
@@ -82,6 +82,11 @@ Just by a quick glance through the makefile, one can:
 
 ## TLDR ##
 
+Machine-readable documentation that makes workflow reproducible (especially locally!)
+
+By going through a well-written Makefile, developers onboarding is able to trace the commands/flow in each step of the application.
+
+
 ### Pros ###
 * collects all the scripts frequently used, in one location for easy reference
 * serves as document of sort for a set of commands that you keep forgetting.
@@ -95,7 +100,7 @@ Just by a quick glance through the makefile, one can:
 
 ## FAQs ##
 * manpage: `man make`
-* 	readmore: https://gertjanvandenburg.com/files/talk/make.html
+* DAG: https://en.wikipedia.org/wiki/Directed_acyclic_graph
 
 
 
